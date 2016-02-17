@@ -10,19 +10,6 @@
 </head>
   <body>
       <div class="mainnav" ID="mainnav">
-     $(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('.nav');
-   var offset = startchange.offset();
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $('.nav').css('background-color', 'rgba(34,34,34,0.9)');
-       } else {
-          $('.nav').css('background-color', 'transparent');
-       }
-   });
-});
           <img src="./images/maclogo1.svg" alt="HTML5 Icon" class="name"/>
           <ul class="nav">
             <li><a class="home" href="index.html">Home</a></li>
