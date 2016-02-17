@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kody Roth's</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+</head>
+  <body>
+      <div class="mainnav" ID="mainnav">
+     $(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('.nav');
+   var offset = startchange.offset();
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('.nav').css('background-color', 'rgba(34,34,34,0.9)');
+       } else {
+          $('.nav').css('background-color', 'transparent');
+       }
+   });
+});
+          <img src="./images/maclogo1.svg" alt="HTML5 Icon" class="name"/>
+          <ul class="nav">
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><a href="#portfolio">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      </div>
+    <header>
+    </header>
+
+    <main class="flex">
+      <div class="card">
+        <h2>Your Full Service Late Model Auto Body Shop</h2>
+        <p>We are your local, family owned collision repair facility. We offer complete high quality repairs on all makes and models for all insurance companies and those paying out of pocket! We offer the latest in Auto body technology.</p> 
+        <p>You have always a choice when choosing your repair shop! 
+      </div>
+      <div class="stuff">
+      <div class="hours">
+                <h3>HOURS:</h3>
+                <p>Monday-Friday 9:00am-5:00pm</p>
+                <p>Saturdays by appointment only</p>
+                <p>Phone: (541) 967-9528 </p>
+                <p>3960 E Commercial Way Albany OR, 97321
+                </div>
+                <div>
+      <button class="button" type="button">Book an Appointment</button>
+    </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5678.63377838262!2d-123.05829253145323!3d44.631439896538865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c06ceeb6e12e35%3A0xc0523bbc2bb9f6f3!2sMcClinton+Auto+Collision+Inc!5e0!3m2!1sen!2sus!4v1455656781699" width="650" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+
+
+
+          
+
+
+  
+         
+         
+         
+      </form>      
+    </main>
+  </body>
+  </html>
