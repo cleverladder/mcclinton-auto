@@ -21,7 +21,7 @@
     <header>
     </header>
 
-    <main class="flex">
+    <main>
       <div class="card">
         <h2>Your Full Service Late Model Auto Body Shop</h2>
         <p>We are your local, family owned collision repair facility. We offer complete high quality repairs on all makes and models for all insurance companies and those paying out of pocket! We offer the latest in Auto body technology.</p> 
@@ -36,25 +36,42 @@
                 <p>3960 E Commercial Way Albany OR, 97321
                 </div>
                 <div>
-      <button class="button" type="button">Book an Appointment</button>
+<!--       <button id="book" class="button" type="button">Book an Appointment</button>
+ -->      <a id="book" class="button" rel="leanModal" name="signup" href="#contactUs">Book an Appointment</a>
     </div>
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5678.63377838262!2d-123.05829253145323!3d44.631439896538865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c06ceeb6e12e35%3A0xc0523bbc2bb9f6f3!2sMcClinton+Auto+Collision+Inc!5e0!3m2!1sen!2sus!4v1455656781699" width="650" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
-
-
-
-
-
-          
-
-
-  
-         
-         
-         
-      </form>      
     </main>
+
+    <div id="contactUs">
+       <div class="skinny-wrapper">
+        <h4>BOOK AN APPOINTMENT</h4>
+        <hr>
+        Call us here: <a href="tel:1-541-967-9528">(541) 967-9528</a> <br> <br>
+        Or fill out the form below: 
+
+        <form method="post" action="#">
+   
+            <label class="srt">Name</label>
+            <input name="name" placeholder="Your Name">
+                    
+            <label class="srt">Email</label>
+            <input name="email" type="email" placeholder="Email Address">
+                    
+            <label class="srt">Message</label>
+            <textarea name="message" placeholder="Message"></textarea>
+              
+            <label class="srt">What is 2+2? (Anti-spam)</label>
+          <input name="human" placeholder="What is 2+2? (Anti-spam)">
+
+            <input id="submit" name="submit" type="submit" value="Submit">
+        
+        </form>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/site.min.js" type="text/javascript"></script>
   </body>
-  </html>
+</html>
